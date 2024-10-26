@@ -1,24 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int *a,largest;
-    int A[10];
-     printf("Enter the elemnts\n");
-     for(int i=0;i<10;i++){
-     scanf("%d",&A[i]);
-     }
-    a=A;
-    largest=*a;
-   
-    for(int i=0;i<10;i++){
-        if(*a>largest){
-            largest =*a;
-        }
-        a++;
+    int x,y;
+    
+    printf("Enter the first number\n");
+    scanf("%d",&x);
+    printf("Enter the second number\n");
+    scanf("%d",&y);
+    if(x>y){
+        printf("first number ids grater than second number");
+
     }
-    printf(" the largest element is%d \n",largest);
+    else{
+
+        printf("Second number is grater than first number\n");
+    }
 
 
+return 0;
    }
 
 
