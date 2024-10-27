@@ -1,24 +1,16 @@
-#include <stdio.h>
+#include<stdio.h>
+int main(){
+ int A[]={1,2,3,4,5,6};
+ for(int i=0;i<6;i++){
+    //printf("%d\n",A[i]);
+     
 
-int main() {
-    int x,y;
-    
-    printf("Enter the first number\n");
-    scanf("%d",&x);
-    printf("Enter the second number\n");
-    scanf("%d",&y);
-    if(x>y){
-        printf("first number ids grater than second number");
+ }
+ //printf("%d\n",A[2]);
+        printf("%d\n",2[A]);
+          printf("%d\n",*(A+2));
 
-    }
-    else{
-
-        printf("Second number is grater than first number\n");
-    }
-
-
-return 0;
-   }
+}
 
 
 
