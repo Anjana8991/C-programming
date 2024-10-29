@@ -7,7 +7,7 @@ int main(){
     int hour,minute,second;
     hour=minute=second=0;
     while(1){
-        // clear output screen 
+        // clear output screen c#'clear' is not recognized as an internal or external command means that the system("clear"); command, which is used to clear the screen in Unix/Linux environments, does not work on Windows. Windows uses cls instead of clear.
         system("cls");
         //print time in HH: MM : SS format
         printf("%02d : %02d : %02d",hour,minute,second);
