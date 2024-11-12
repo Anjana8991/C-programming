@@ -1,18 +1,50 @@
 #include<stdio.h>
 #include<conio.h>
+int  Menu();
+void Bus();
+void Cycle();
+void Riksha();
+void Delete();
+void showdetail();
+
 int nor=0,nob=0,noc=0,amount =0,count=0;
 void main(){
+clrscr();
+switch(Menu()){
+    case1:
+        Bus();
+        break;
+    case2:
+        Cycle();
+        break;
+    case3:
+        Riksha();
+        break;
+    case4:
+        showdetail();
+        break;
+    case5:
+    Delete();
+    break;
+    default:
+    printf("\n Invalid choice");
 
 }
-void Menu()  {
+getch();
+
+}
+int Menu()  {
+    int ch;
     printf("\n  enter bus");
     printf("\n  enter cycle");
     printf("\n  enter Riksha");
      printf("\n  show status");
      printf("\n  delete data");
-
+    printf("\n Enter your choice\n");
+    scanf("%d",&ch);
+    return(ch);
     }
-void Delte(){
+void Delete(){
     nob=0;
     noc=0;
     nor=0;
